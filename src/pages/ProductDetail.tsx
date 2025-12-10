@@ -15,7 +15,7 @@ export const ProductDetail: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [quantity, setQuantity] = useState(1);
-  const [selectedImage, setSelectedImage] = useState(0);
+  const [selectedImage, _setSelectedImage] = useState(0);
 
   useEffect(() => {
     if (id) {
